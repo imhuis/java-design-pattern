@@ -20,10 +20,8 @@ java {
 
 }
 
-tasks.withType<JavaCompile> {
-    options.encoding = "UTF-8"
-    options.compilerArgs.add("-Xlint:unchecked")
-    options.compilerArgs.add("-Xlint:deprecation")
+testing {
+
 }
 
 allprojects {
@@ -55,7 +53,6 @@ allprojects {
             }
         }
     }
-
 }
 
 dependencies {
@@ -69,8 +66,9 @@ dependencies {
     testAnnotationProcessor("org.projectlombok:lombok:1.18.30")
 }
 
-//publishing {
-//    publications.create<MavenPublication>("maven") {
-//        from(components["java"])
-//    }
-//}
+tasks.withType<JavaCompile> {
+    options.encoding = "UTF-8"
+    options.compilerArgs.add("-Xlint:unchecked")
+    options.compilerArgs.add("-Xlint:deprecation")
+}
+

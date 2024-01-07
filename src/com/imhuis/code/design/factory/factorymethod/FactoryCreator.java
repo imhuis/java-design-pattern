@@ -1,4 +1,6 @@
-package com.imhuis.code.design.factorymethod;
+package com.imhuis.code.design.factory.factorymethod;
+
+import com.imhuis.code.design.factory.IProduct;
 
 import java.util.Calendar;
 
@@ -15,8 +17,4 @@ public abstract class FactoryCreator {
     实现类不一定每次调用都创建新实例，工厂方法也可以返回缓存、对象池或其他来源的已有对象
      */
     abstract IProduct createProduct();
-
-    public static void main(String[] args) {
-        Calendar.getInstance();
-    }
 }

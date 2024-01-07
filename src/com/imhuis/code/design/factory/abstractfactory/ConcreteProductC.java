@@ -1,4 +1,4 @@
-package com.imhuis.code.design.abstractfactory;
+package com.imhuis.code.design.factory.abstractfactory;
 
 /**
  * @author: imhuis

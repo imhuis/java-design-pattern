@@ -1,9 +1,9 @@
-package com.imhuis.code.design.factorymethod;
+package com.imhuis.code.design.factory;
 
 /**
  * @author: imhuis
  * @date: 2023/8/9
- * @description: Concrete Products
+ * @description: Concrete Products 具体产品
  */
 public class ConcreteProductA implements IProduct {
 

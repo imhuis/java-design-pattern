@@ -1,4 +1,4 @@
-package com.imhuis.code.design.factorymethod;
+package com.imhuis.code.design.factory;
 
 /**
  * @author: imhuis
